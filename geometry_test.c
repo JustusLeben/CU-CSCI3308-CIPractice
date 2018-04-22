@@ -158,8 +158,8 @@ START_TEST(test_2d_area_triangle)
     b.y = 0;
     c.x = 0;
     c.y = 0;
-    result = coord_2d_area_triangle(&a,&b,&c);
-    ck_assert(result == 0);
+    output = coord_2d_area_triangle(&a,&b,&c);
+    ck_assert(output == 0);
     
     a.x = 4;
     a.y = 4;
@@ -167,8 +167,8 @@ START_TEST(test_2d_area_triangle)
     b.y = 6;
     c.x = 7;
     c.y = 7;
-    
-    ck_assert(result == 2);
+    output = coord_2d_area_triangle(&a,&b,&c);
+    ck_assert(output == 2);
 }
 END_TEST
 /* coord_2d Test Suite */
