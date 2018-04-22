@@ -161,15 +161,14 @@ START_TEST(test_2d_area_triangle)
     output = coord_2d_area_triangle(&a,&b,&c);
     ck_assert(output == 0);
     
-    a.x = 4;
-    a.y = 4;
-    b.x = 4;
-    b.y = 6;
-    c.x = 6;
-    c.y = 6;
+    a.x = 0;
+    a.y = 0;
+    b.x = 1;
+    b.y = 0;
+    c.x = 0;
+    c.y = 1;
     output = coord_2d_area_triangle(&a,&b,&c);
-    printf("%d",output);
-    ck_assert(output == 2.0);
+    ck_assert(output == 0.5);
 }
 END_TEST
 /* coord_2d Test Suite */
