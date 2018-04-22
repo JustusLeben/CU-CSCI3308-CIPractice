@@ -168,7 +168,7 @@ START_TEST(test_2d_area_triangle)
     c.x = 6;
     c.y = 6;
     output = coord_2d_area_triangle(&a,&b,&c);
-    printf(output);
+    printf("%d",output);
     ck_assert(output == 2.0);
 }
 END_TEST
